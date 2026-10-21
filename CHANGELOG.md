@@ -1,5 +1,19 @@
 # 更新记录 | Changelog
 
+## 4.5.1 · 牌桌与移动端 | Table & Mobile Polish
+
+### 中文
+- 空覆改为每局三次；单人模式的人机也会根据牌面强度选择空覆。
+- 扣牌区改为居中布局，单张与多张扣牌都保持在牌区中央。
+- 移动端补充安全区、操作条、顶栏与横屏适配；图鉴卡片按需渲染，页面滚动更顺。
+- 图标按钮补充可见说明文字，并统一补齐悬停/读屏描述。
+
+### English
+- Pass is now available three times per match; the solo AI can also choose to pass based on hand strength.
+- Played cards are centered in their zone, whether one card or several.
+- Added safe-area, action-bar, top-bar, and landscape refinements for mobile; codex cards render on demand for smoother scrolling.
+- Icon-only buttons now show short visible captions, with hover and screen-reader descriptions filled in.
+
 ## 4.5 · 新绘与双语 | New Art & Bilingual Edition
 
 ### 中文
