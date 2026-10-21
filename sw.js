@@ -1,5 +1,5 @@
-/* 对议牌 4.5.1 · 离线缓存 | Councils 4.5.1 offline cache */
-const VERSION = "councils-4.5.1";
+/* 对议牌 4.5.2 · 离线缓存 | Councils 4.5.2 offline cache */
+const VERSION = "councils-4.5.2";
 const CORE = [
   "./",
   "./index.html",

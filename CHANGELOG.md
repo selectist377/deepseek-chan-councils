@@ -1,5 +1,19 @@
 # 更新记录 | Changelog
 
+## 4.5.2 · 转币、花色与积变流程 | Coin, Suits & Cumulative Flow
+
+### 中文
+- 转币改为每局三次，按钮显示剩余次数；人机也会在额度内使用硬币。
+- 玩法速览与规则说明中的 ♥♦♠♣ 按红黑着色，牌面信息更直观。
+- 积变对局在“本轮议事计算过程”中展示当轮轮次、点数加成、牌色状态与每张牌的有效点数。
+- 音乐面板补回“收起”按钮；手机端 AI 议席立绘区域的白底完整覆盖到立绘下方。
+
+### English
+- Coin Flip now allows three uses per match, with the remaining count shown on the button; the AI can also use coins within that limit.
+- ♥♦♠♣ in the tutorial and rules are colored red or black for quicker reading.
+- Cumulative Change matches now show the current round, point bonus, color state, and each card's effective value in the round calculation panel.
+- Restored the music panel's Collapse button; on mobile, the white advisor panel now covers the full area beneath the portraits.
+
 ## 4.5.1 · 牌桌与移动端 | Table & Mobile Polish
 
 ### 中文
