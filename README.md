@@ -12,7 +12,7 @@
 
 ### 这一版
 
-- **七席新绘**：DeepSeek、ChatGPT、Claude、Gemini、Qwen、Zhipu、Grok 七位 AI 娘换上全新立绘，图鉴、对局头像与大图鉴同步更新。
+- **六席新绘**：ChatGPT、Claude、Gemini、Qwen、Zhipu、Grok 换上全新立绘；DeepSeek 保留原有鲸鱼娘形象。图鉴、对局头像与大图鉴同步更新。
 - **双语独立页面**：`index.html` 为完整中文版，`index.en.html` 为完整英文版。界面、规则、DLC、角色对白、桌宠动作与结算文案各自成篇，不再逐词替换。
 - **会跑的桌宠**：DeepSeek 桌宠收录 106 种动作，可拖动到屏幕任意位置并记住位置；支持收起与恢复，也能点击随机换动作。
 - **七种 DLC**：纯净议事、除尊、空覆、同夺、引骰、转币、求同、积变。每局启用一项，规则卡可翻面阅读。
@@ -79,7 +79,7 @@ README.md / 说明.txt / PROJECT_TITLE.txt / CHANGELOG.md
 
 ### What's in 4.5
 
-- **Seven new portraits**: DeepSeek, ChatGPT, Claude, Gemini, Qwen, Zhipu, and Grok each get a new character illustration, updated across the codex, match portraits, and gallery.
+- **Six new portraits**: ChatGPT, Claude, Gemini, Qwen, Zhipu, and Grok each get a new character illustration; DeepSeek keeps its original whale-girl look. Updated across the codex, match portraits, and gallery.
 - **Two complete language pages**: `index.html` is the full Chinese edition; `index.en.html` is the full English edition. Interface, rules, DLC text, character dialogue, pet actions, and result screens are written for each language rather than swapped word by word.
 - **A pet that goes anywhere**: the DeepSeek pet includes 106 actions, can be dragged to any corner, and remembers its position. Hide it with the close button and bring it back from the pet button.
 - **Seven DLC rule sets**: Standard Council, Rank Removal, Pass, Mutual Snatch, Dice Call, Coin Flip, Parity, and Cumulative Change. Enable one per match and flip a rule card to read it.

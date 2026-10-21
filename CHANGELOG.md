@@ -3,14 +3,14 @@
 ## 4.5 · 新绘与双语 | New Art & Bilingual Edition
 
 ### 中文
-- 七位 AI 议席（DeepSeek、ChatGPT、Claude、Gemini、Qwen、Zhipu、Grok）启用全新立绘，图鉴、对局头像与展示页同步更新。
+- 六位 AI 议席（ChatGPT、Claude、Gemini、Qwen、Zhipu、Grok）启用全新立绘，DeepSeek 保留原有形象；图鉴、对局头像与展示页同步更新。
 - 中文与英文拆分为独立页面：`index.html` 与 `index.en.html`，界面、规则、DLC、对白、桌宠动作与结算文案各自完整成篇。
 - 桌宠支持全屏拖动、位置记忆、收起与恢复；106 种动作在两种语言下均有对应名称。
 - 统一宣传视频的中文文件名；更新 PWA 清单、离线缓存与移动端排版。
 - 中文入口与英文入口均提供完整术语表与说明文档。
 
 ### English
-- New portraits for all seven AI advisors: DeepSeek, ChatGPT, Claude, Gemini, Qwen, Zhipu, and Grok, updated across the codex, match portraits, and gallery.
+- New portraits for six AI advisors: ChatGPT, Claude, Gemini, Qwen, Zhipu, and Grok; DeepSeek keeps its original look. Updated across the codex, match portraits, and gallery.
 - Chinese and English are now separate, complete pages: `index.html` and `index.en.html`, covering the interface, rules, DLC, dialogue, pet actions, and result screens in each language.
 - The pet can be dragged anywhere, remembers its position, and can be hidden or restored; all 106 actions have names in both languages.
 - Standardized the promo video's Chinese filename; refreshed the PWA manifests, offline cache, and mobile layout.
