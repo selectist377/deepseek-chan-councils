@@ -1,0 +1,24 @@
+{
+  "name": "Councils (deepseek-chan edition)",
+  "short_name": "Councils",
+  "description": "A lightweight card game blending poker, AI advisors, and strategy. Red/black splits, joker reversals, seven DLC rule sets.",
+  "lang": "en",
+  "start_url": "./index.en.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eaf6ff",
+  "theme_color": "#eaf6ff",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

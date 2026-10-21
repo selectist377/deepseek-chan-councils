@@ -1,0 +1,24 @@
+{
+  "name": "对议牌（蓝色大肥鱼版） | Councils (deepseek-chan edition)",
+  "short_name": "Councils",
+  "description": "融合扑克、AI 议席与策略博弈的轻量桌游。红黑分色、王牌翻转、七种 DLC 规则、七位 AI 娘。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eaf6ff",
+  "theme_color": "#eaf6ff",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
