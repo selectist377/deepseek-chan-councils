@@ -1,0 +1,8 @@
+对议牌 · 蓝色大肥鱼版本 4.5
+Councils (deepseek-chan edition) 4.5
+
+蓝色大肥鱼 = deepseek-chan
+对议点数 = Conuncils Point
+
+中文入口 = index.html
+English entry = index.en.html

@@ -1,4 +1,32 @@
-《对议牌4.2》单文件手机极速版
+《对议牌 4.5 · 新绘双语版》
+Councils (deepseek-chan edition) 4.5
 
-解压后直接点击 index.html。无需 npm、Node.js 或本地服务器。
-手机端关闭 Three.js 海洋场景；游戏 JS/CSS 内嵌；DeepSeek 宠物点击随机切换 106 个图鉴动作，可拖动。
+解压后直接双击 index.html 即可游玩，无需 npm、Node.js 或本地服务器。
+英文版请打开 index.en.html；页面左下角的语言按钮可在中英文之间切换。
+
+目录说明：
+  index.html / index.en.html   中文 / 英文入口
+  characters/                  七席立绘与扑克牌素材
+  pets/、pets-all/             桌宠动作与图鉴
+  music/                       背景音乐
+  sw.js、manifest*.webmanifest 离线缓存与 PWA 清单
+
+手机端已做紧凑布局；桌宠可拖到任意位置并记住位置，也可收起后从「宠物」按钮恢复。
+建议把整个文件夹放到 GitHub Pages 仓库根目录。
+
+---
+
+Councils (deepseek-chan edition) 4.5
+
+Extract the archive and open index.html to play. No npm, Node.js, or local server required.
+For English, open index.en.html, or use the language button at the lower-left.
+
+Folders:
+  index.html / index.en.html   Chinese / English entry
+  characters/                  Seven portraits and card art
+  pets/, pets-all/             Pet actions and codex
+  music/                       Background music
+  sw.js, manifest*.webmanifest Offline cache and PWA manifests
+
+The mobile layout is compact. The pet can be dragged anywhere and remembers its position; hide it and restore it from the pet button.
+Host the whole folder at the root of a GitHub Pages repository.
