@@ -1,0 +1,604 @@
+对议牌 · 蓝色大肥鱼版本
+
+规则与 DLC 完整说明
+
+Councils (deepseek-chan edition) — Complete Rules & DLC Reference
+
+- 规则版本 / Rules version：4.5.2
+- 更新 / Updated：2026-10
+- 中文入口 / Chinese：https://selectist377.github.io/deepseek-chan-councils/
+- English entry：https://selectist377.github.io/deepseek-chan-councils/index.en.html
+  本文同时适用于中文版与英文版。文中「对议点数 / 议点」统一译为 Conuncils Point（项目指定拼写）。
+    This document applies to both the Chinese and English pages. The score is consistently called Conuncils Point in English (the project's chosen spelling).
+==============================================================================
+一分钟速览 | Quick Reference
+
+| 项目 | Item | 说明 | Notes |
+| 人数 | Players | 1 人机 / 2 人同屏 | 1 vs AI / 2 pass-and-play |
+| 牌组 | Deck | 52 张标准牌 + 大王 + 小王，共 54 张 | 52-card deck + 2 jokers |
+| 手牌 | Hand | 双方各 4 张 | 4 cards each |
+| 每轮扣牌 | Cards per round | 1–2 张，或 1 张牌 + 1 个特殊行动 | 1–2 cards, or 1 card + 1 special |
+| 花色 | Suits | ♥ 红桃、♦ 方片为红；♠ 黑桃、♣ 梅花为黑 | Hearts/diamonds red; spades/clubs black |
+| 点数 | Values | A=1，2–10 按牌面，J=11，Q=12，K=13；王牌 0 | A=1, 2–10 face, J=11, Q=12, K=13; jokers 0 |
+| 结算 | Scoring | 分色 → 求和 → 均点向上取整 → 比较 → 王牌翻转 | Split color → sum → average, round up → compare → joker reversal |
+| 终局 | End | 讨论结束，或牌堆耗尽且双方都无法补至 4 张 | End Discussion, or deck exhausted and neither can refill to 4 |
+| 胜负 | Winner | 议点高者胜；相同为平局 | Higher Conuncils Point wins; equal is a draw |
+==============================================================================
+目录 | Contents
+
+中文：1 游戏概览 · 2 牌组与开局 · 3 每轮流程 · 4 结算规则 · 5 终局与胜负 · 6 特殊行动 · 7 DLC 详解 · 8 AI 强度与 AI 议席 · 9 操作与界面 · 10 常见问题 · 11 术语表 · 12 版权与署名
+
+English: 1 Overview · 2 Deck and Setup · 3 Round Flow · 4 Scoring · 5 Ending the Match · 6 Special Actions · 7 DLC Reference · 8 AI Strength and AI Advisors · 9 Controls and Interface · 10 FAQ · 11 Glossary · 12 Credits and Rights
+==============================================================================
+中文规则
+
+1. 游戏概览
+
+《对议牌》是一款把扑克牌、AI 议席与策略博弈结合起来的轻量卡牌桌游。双方每轮从手牌中扣置 1–2 张牌，摊牌后按颜色分别计算平均点数，再比较高低；王牌数量会翻转胜负。七种 DLC 规则可以改写牌局逻辑，每局只能启用一种。
+
+- 单人模式（PvE）：你执 P1，对席固定为 DeepSeek；你在六位 AI 议席中选择一位作为角色与对白，对席强度决定 DeepSeek 的实际出牌水平。
+- 双人模式（PvP）：同一台设备轮流扣牌；P1 先手，交接时有闪屏提示。
+- 一局时长：通常几分钟，取决于牌堆消耗与「讨论结束」的时机。
+- 目标：在终局时拥有更高的对议点数。
+
+2. 牌组与开局
+
+- 牌组为标准 52 张牌，加上大王（红）和小王（黑），共 54 张。
+- 每张牌有花色与颜色：♥ 红桃、♦ 方片为红色；♠ 黑桃、♣ 梅花为黑色。
+- 点数：A=1，2–10 按牌面，J=11，Q=12，K=13；大王、小王均为 0 点。
+- 双方各发 4 张手牌，剩余 46 张作为牌堆。
+- 开局时 P1 执红、P2 执黑。
+- 在大厅中选择一种 DLC（不选则为「纯净议事」），然后开始对局。
+
+3. 每轮流程
+
+1. 选择阶段：当前玩家从手牌中扣置 1–2 张牌。
+   - 没有特殊行动时，最多 2 张牌。
+   - 使用骰子或硬币时，最多 1 张牌 + 1 个特殊行动。
+   - 可以点「清空」撤销本轮选择。
+2. 提交：
+   - 单人模式：你提交后，DeepSeek 开始思考，然后双方摊牌。
+   - 双人模式：P1 确认后交给 P2；P2 确认后双方摊牌。
+3. 摊牌：展示双方扣置的牌。
+4. 结算：按第 4 节的规则计算本轮的胜负与得分。
+5. 补牌：双方从牌堆补至 4 张；牌堆为空则不补。
+6. 下一轮：点击「下一轮」，双方红黑阵营互换，进入下一轮。
+  单人模式下，DeepSeek 只在你提交后才开始思考；双人模式下，双方在同一设备轮流操作。
+
+4. 结算规则（核心）
+
+4.1 分色
+
+把双方本轮扣置的牌合在一起，按颜色分成两组：
+
+- 红色组：红桃、方片。
+- 黑色组：黑桃、梅花。
+
+硬币是无色王牌，不计入分色；骰子有颜色与花色，计入分色。
+
+4.2 求和与均点
+
+- 对每种颜色分别求和，再除以该颜色的牌数。
+- 平均点数 向上取整（例如 9.33 → 10，12.1 → 13）。
+- 只有一种颜色时，该颜色直接获胜。
+- 两种颜色都有时，比较两色的均点；均点高的一方获胜。
+- 两种颜色均点相同 → 平局。
+- 没有任何有色牌（例如只有硬币/王牌）→ 平局。
+
+4.3 王牌翻转
+
+- 大王、小王都是王牌；硬币在规则上也是「无色王牌」。
+- 统计本轮双方扣置的王牌总数 N（含硬币，不含骰子）。
+- 若 N 为奇数，且本轮本来有胜负：胜负翻转（红方变黑方，黑方变红方）。
+- 若 N 为偶数：不翻转。
+- 若本轮本来就是平局：王牌不改变平局结果。
+
+4.4 得分
+
+- 红方获胜：当前执红的一方 +1 议点。
+- 黑方获胜：当前执黑的一方 +1 议点。
+- 平局：双方各 +1 议点。
+
+4.5 示例
+
+本轮红方 3 张牌合计 28 点 → 28 ÷ 3 = 9.33 → 向上取整 10；黑方 1 张牌 4 点 → 4。红方均点更高，本来红方胜。双方共扣了 1 张王牌（奇数），于是胜负翻转，改为黑方胜，黑方 +1 议点。
+
+如果红方 10、黑方 10，本来就是平局；即使王牌是奇数，仍然是平局，双方各 +1。
+
+5. 终局与胜负
+
+出现以下任一情况时终局：
+
+1. 任一玩家点击「讨论结束」。需要连续点击两次确认（第二次需在约 2.6 秒内完成）；提前结束的牌局，未结算的牌阵不计分。
+2. 牌堆耗尽，且双方都无法补足 4 张手牌。
+3. 某些 DLC 的强制终局：例如「同夺」触发后有人无法补足 4 张；「积变」第 16 轮结算后。
+
+终局时议点高者获胜；相同则为平局。
+
+6. 特殊行动
+
+特殊行动只在对应 DLC 启用时出现，且每名玩家每局有独立次数。
+
+6.1 空覆（Pass）
+
+- 每名玩家每局最多 3 次。
+- 本回合不扣牌；按钮会显示剩余次数（如「空覆 ×3」）。
+- 使用空覆的回合不能引骰或转币。
+- 若双方同时空覆：本回合照常结算（双方各 +1），但 不补牌。
+- 只有一方空覆：按另一方扣置的牌结算。
+- 人机也会在额度内根据牌面强度选择空覆。
+
+6.2 引骰（Dice Call）
+
+- 每名玩家每局最多 3 次。
+- 骰子可以代替一张牌扣置；使用骰子的回合最多再扣 1 张牌。
+- 投掷三次：
+  - 第一掷定颜色：奇数红、偶数黑。
+  - 第二掷与第一掷的奇偶组合定花色：奇+奇红桃，奇+偶方片，偶+奇黑桃，偶+偶梅花。
+  - 第三掷点数 ×2，即 2–12 点。
+- 骰子有颜色、花色和点数，参与分色与均点；骰子不是王牌，不计入王牌翻转。
+- 人机也会在额度内使用骰子。
+
+6.3 转币（Coin Flip）
+
+- 每名玩家每局最多 3 次。
+- 硬币可以代替一张牌扣置；按钮显示剩余次数（如「转币 ×3」）。
+- 硬币是无色王牌，0 点；不计入分色与均点，但计入王牌翻转次数。
+- 每回合最多使用 1 枚硬币；三次额度可在不同回合使用。
+- 人机也会在额度内使用硬币。
+
+7. DLC 详解
+
+每局只能启用一种 DLC；切换 DLC 会以新规则重新开始当前对局。规则卡可在选择界面翻面阅读。
+
+DLC 0：纯净议事（Standard Council）
+
+- 不启用任何特殊规则。
+- 使用基础结算与王牌翻转。
+- 适合先熟悉规则。
+
+DLC 1：除尊 · 大家都是小丑（Rank Removal · Everyone's a Joker）
+
+- 所有 J、Q、K 变成 0 点王牌，但保留原来的花色与颜色：红为大王、黑为小王。
+- 这些牌仍然占手牌位，仍然参与分色与均点计算（按 0 点计）。
+- 它们计入王牌翻转次数。
+- 每轮仍然最多扣置 2 张牌。
+- 提示：J/Q/K 会同时改变「均点」和「王牌奇偶」，适合用来制造翻转。
+
+DLC 2：空覆 · 假装思考（Pass · Pretend to Think）
+
+- 每名玩家每局最多 3 次空覆。
+- 空覆回合不扣牌；双方同时空覆时照常结算但不补牌。
+- 空覆回合不能引骰或转币。
+- 人机也会空覆。
+- 提示：手牌很差时，空覆可以避免把弱牌打进结算；但双方都空覆时不会补牌，牌堆会更快耗尽。
+
+DLC 3：同夺 · 你也别想了（Mutual Snatch · Don't Even Think About It）
+
+- 结算后，如果双方扣置的牌中存在 同花色 或 同有效点数（骰子与硬币除外），触发「同夺」。
+- 触发后：双方弃掉剩余手牌，并各补至 4 张。
+- 如果因此有一方无法补足 4 张：对局立即结束，并 交换双方议点。
+- 如果双方都能补足 4 张：正常继续下一轮。
+- 「同点数」按当轮的有效点数计算（例如「求同」「积变」会改变有效点数）。
+- 提示：接近牌堆耗尽时触发同夺，可能直接终局并交换比分。
+
+DLC 4：引骰 · 骰子说了算（Dice Call · The Dice Decide）
+
+- 每名玩家每局最多 3 次引骰。
+- 骰子代替一张牌扣置；使用骰子的回合最多再扣 1 张牌。
+- 三次投掷决定颜色、花色与点数：
+  - 第一掷：奇数红、偶数黑。
+  - 前两掷奇偶：奇+奇红桃，奇+偶方片，偶+奇黑桃，偶+偶梅花。
+  - 第三掷：点数 ×2（2–12）。
+- 骰子参与分色与均点，但不是王牌。
+- 提示：高点数骰子可以显著抬高某一颜色的均点；低点数骰子则适合用来「垫」均点。
+
+DLC 5：转币 · 用硬币变个魔术（Coin Flip · A Little Coin Magic）
+
+- 每名玩家每局最多 3 次转币。
+- 硬币代替一张牌扣置，是无色王牌、0 点。
+- 不计入分色与均点；计入王牌翻转次数。
+- 每回合最多 1 枚硬币；三次额度可在不同回合使用。
+- 提示：硬币可以用来精确控制王牌奇偶，尤其在平局边缘。
+
+DLC 6：求同 · 只有零和一（Parity · Only Zero and One）
+
+- 所有牌的 有效点数 = 牌面点数对 2 取余，只保留 0 或 1。
+- 王牌仍按 0 点计算。
+- 例如：A=1→1，2→0，3→1，10→0，J=11→1，Q=12→0，K=13→1。
+- 均点仍然向上取整，但结果只会是 0 或 1。
+- 提示：高牌不一定有价值；关键是凑出更多 1。
+
+DLC 7：积变 · 此一时彼一时（Cumulative Change · This Time, That Time）
+
+- 对局最多 16 轮；第 16 轮结算后终局，牌堆提前耗尽也会结束。
+- 从第 2 轮开始，每个 偶数轮开始时，场上所有牌的红黑色互换；第 3 轮保持，第 4 轮再换回。
+- 单张牌参与当轮结算的有效点数 = （牌面点数 + 当前轮次）mod 13。
+  - A=1，J=11，Q=12，K=13；王牌仍为 0 点。
+  - 例如第 1 轮：A→2，J→12，K→14 mod 13=1。
+- 注意：基础规则中「双方阵营」每轮都会互换；积变额外让「牌面颜色」在偶数轮互换。两者是不同概念。
+- 对局界面会显示「第 X / 16 轮」「牌色 · 反转 / 正常」；「本轮议事计算过程」会列出当轮公式、牌色状态和每张牌的有效点数。
+
+8. AI 强度与 AI 议席
+
+- 休闲（Casual）：随机扣牌，偶尔空覆/引骰/转币；适合熟悉规则。
+- 标准（Standard）：会考虑花色、均点、王牌风险；出牌更稳。
+- 深思（Deep）：模拟未知手牌，按胜率出牌；计算更慢，但更难对付。
+- 单人模式中选择的「AI 议席」主要负责角色立绘与对白；对席强度决定 DeepSeek 的实际出牌水平。
+- 人机也会在三次额度内使用空覆、引骰与转币。
+
+9. 操作与界面
+
+- 点击手牌选择/取消；每轮最多 2 张。
+- 「提交提案」结算本轮；「下一轮」继续。
+- 「讨论结束」需要连续点击两次确认。
+- 顶栏可打开：议席图鉴、规则扩充 DLC、对局规则、音乐播放器、音效、全屏、触碰互动、离开对局。
+- 音乐面板有「收起」按钮；支持播放列表与本地选曲。
+- 桌宠可拖动到任意位置并记住位置，点击换动作；右上角可收起，左下角「宠物」按钮恢复。
+- 左下角语言按钮在中文页与英文页之间切换；切换会重新载入对应语言页面。
+
+10. 常见问题（FAQ）
+
+Q1：王牌为偶数张时，会翻转几次？  
+不翻转。只有奇数张才翻转，而且只翻转一次。
+
+Q2：平局时抽到奇数张王牌，会变成某一方获胜吗？  
+不会。平局不受王牌影响，双方仍然各 +1。
+
+Q3：硬币算王牌吗？  
+算。硬币是无色王牌，计入王牌翻转次数；但不计入分色与均点。
+
+Q4：骰子算王牌吗？  
+不算。骰子有颜色、花色和点数，参与分色与均点，但不计入王牌翻转。
+
+Q5：除尊里的 J/Q/K 参与分色和均点吗？  
+参与，按 0 点计算；它们也是王牌，计入翻转次数。
+
+Q6：双方都空覆会怎样？  
+照常结算，双方各 +1；本回合不补牌。
+
+Q7：空覆之后还能引骰/转币吗？  
+不能；空覆回合不能使用这两个特殊行动。
+
+Q8：同夺触发后一定终局吗？  
+不一定。双方都能补足 4 张就继续；有人补不足才立即终局并交换议点。
+
+Q9：积变的「牌色反转」和「阵营互换」是一回事吗？  
+不是。阵营每轮互换；牌面颜色只在偶数轮开始时互换。积变同时启用两者。
+
+Q10：积变第 16 轮之后还会继续吗？  
+不会；第 16 轮结算后终局。
+
+Q11：人机会空覆吗？  
+会。人机在三次额度内根据牌面强度选择空覆；引骰与转币也有独立次数。
+
+Q12：为什么我切换语言后对局重置了？  
+中英文是独立页面；切换语言会重新载入对应页面，当前对局状态不会跨页面保留。
+
+Q13：可以离线玩吗？  
+可以。首次在线打开后，Service Worker 会缓存核心内容；之后可离线游玩。通过 https:// 或 localhost 访问时离线缓存才会注册。
+
+Q14：手机上怎么安装？  
+iOS Safari：分享 → 添加到主屏幕。Android Chrome：右上角 ⋮ → 安装应用 / 添加到主屏幕。
+
+Q15：为什么牌堆耗尽后有时还能继续？  
+只有「牌堆为空且双方都无法补足 4 张」才终局；如果一方仍能补足，对局继续。
+
+11. 术语表
+
+| 中文 | English | 说明 |
+| 对议牌 | Councils | 游戏名 |
+| 蓝色大肥鱼 | deepseek-chan | 角色名 |
+| 对议点数 / 议点 | Conuncils Point | 得分 |
+| 扣牌 | play / commit a card | 本轮出牌 |
+| 摊牌 | reveal | 展示扣置的牌 |
+| 分色 | color split | 按红黑分组 |
+| 均点 | average points | 颜色内平均点数 |
+| 向上取整 | round up | 均点取整 |
+| 王牌 | joker | 大王/小王/硬币 |
+| 翻转 | reversal | 王牌奇数时反转胜负 |
+| 空覆 | pass | 本回合不扣牌 |
+| 引骰 | dice call | 使用骰子 |
+| 转币 | coin flip | 使用硬币 |
+| 除尊 | rank removal | J/Q/K 变 0 点王牌 |
+| 同夺 | mutual snatch | 同花色/同点数触发洗牌 |
+| 求同 | parity | 点数对 2 取余 |
+| 积变 | cumulative change | 轮次加成与偶数轮换色 |
+| 对席 | opponent | PvE 中为 DeepSeek |
+| AI 议席 | AI advisor | 可选角色与对白 |
+| 图鉴 | codex | 角色与桌宠图鉴 |
+
+12. 版权与署名
+
+本项目为同人桌游网页，免费、非商业。DeepSeek、ChatGPT、Claude、Gemini、Qwen、Zhipu、Grok 等名称与角色形象归各自权利人所有；背景音乐版权归原作者所有。4.5 版更新了 AI 议席立绘与双语页面，保留原有玩法、素材目录与署名信息。若权利人要求调整或移除相关内容，请与项目维护者联系。
+==============================================================================
+English Rules
+
+1. Overview
+
+Councils (deepseek-chan edition) is a lightweight card game that combines a standard poker deck, AI "advisors", and light strategy. Each round both sides commit 1–2 cards, reveal them, compare average points by color, and let jokers reverse the result. Seven optional DLC rule sets rewrite parts of the game; only one can be active per match.
+
+- Solo (PvE): you play P1 against DeepSeek. You choose one of six AI advisors for portraits and dialogue; the opponent strength setting determines how well DeepSeek actually plays.
+- Two players (PvP): pass-and-play on one device; P1 goes first and a screen cue marks each handoff.
+- Length: usually a few minutes, depending on how quickly the deck runs down and when someone ends the discussion.
+- Goal: finish with more Conuncils Points.
+
+2. Deck and Setup
+
+- A standard 52-card deck plus a red big joker and a black small joker: 54 cards.
+- Suits and colors: ♥ hearts and ♦ diamonds are red; ♠ spades and ♣ clubs are black.
+- Values: A=1, 2–10 at face value, J=11, Q=12, K=13; both jokers are 0 points.
+- Each side draws 4 cards; the remaining 46 cards form the deck.
+- P1 starts as red and P2 as black.
+- Choose one DLC in the lobby (or none for Standard Council), then start the match.
+
+3. Round Flow
+
+1. Selection: the active player commits 1–2 cards from their hand.
+   - Without a special action: up to 2 cards.
+   - With dice or a coin: up to 1 card + 1 special action.
+   - Clear cancels the current selection.
+2. Submit:
+   - Solo: after you submit, DeepSeek starts thinking, then both sides reveal.
+   - Two players: P1 confirms, hands the device to P2; P2 confirms, then both reveal.
+3. Reveal: show the committed cards.
+4. Resolve: apply the scoring rules in section 4.
+5. Refill: both sides refill to 4 cards; if the deck is empty, no refill.
+6. Next Round: sides swap red/black and the next round begins.
+
+4. Scoring
+
+4.1 Color Split
+
+Combine both sides' committed cards and split them by color:
+
+- Red: hearts and diamonds.
+- Black: spades and clubs.
+
+Coins are colorless jokers and are excluded from the color split. Dice have a color and suit and are included.
+
+4.2 Sum and Average
+
+- Sum each color, then divide by the number of cards of that color.
+- Round the average up (e.g. 9.33 → 10, 12.1 → 13).
+- If only one color is present, that color wins.
+- If both colors are present, compare their averages; the higher average wins.
+- Equal averages → tie.
+- No colored cards (e.g. only coins/jokers) → tie.
+
+4.3 Joker Reversal
+
+- Big joker and small joker are jokers; a coin also counts as a colorless joker.
+- Count the total number of jokers N committed this round by both sides (coins included, dice excluded).
+- If N is odd and there is an existing win/loss: reverse the winner (red becomes black, black becomes red).
+- If N is even: no reversal.
+- If the round is already a tie: jokers do not change it.
+
+4.4 Scoring
+
+- Red wins: the side currently playing red gains +1 Conuncils Point.
+- Black wins: the side currently playing black gains +1.
+- Tie: both sides gain +1.
+
+4.5 Example
+
+Red has 3 cards totaling 28 → 28 ÷ 3 = 9.33 → rounded up to 10. Black has 1 card worth 4 → 4. Red would win on average. One joker was committed (odd), so the result reverses: black wins and gains +1.
+
+If red has 10 and black has 10, the round is a tie. Even an odd number of jokers leaves it a tie; both gain +1.
+
+5. Ending the Match
+
+The match ends when any of the following happens:
+
+1. A player chooses End Discussion. It requires two clicks (the second within about 2.6 seconds). Cards not yet resolved do not score.
+2. The deck is empty and neither side can refill to 4 cards.
+3. A DLC forces an end: for example, Mutual Snatch leaves someone unable to refill; or Cumulative Change finishes round 16.
+
+The higher Conuncils Point total wins; equal totals are a draw.
+
+6. Special Actions
+
+Special actions appear only when the matching DLC is active, and each player has their own uses.
+
+6.1 Pass
+
+- Up to 3 times per player per match.
+- Commit no card this round; the button shows the remaining uses (e.g. Pass ×3).
+- A pass round cannot use dice or coins.
+- If both players pass: the round still settles (both gain +1), but no cards are refilled.
+- If only one player passes: the other side's committed cards settle the round.
+- The AI can also pass within its three uses.
+
+6.2 Dice Call
+
+- Up to 3 times per player per match.
+- A die can replace one card; on a die turn you may commit only 1 more card.
+- Roll three dice:
+  - First die: odd = red, even = black.
+  - First two dice parity: odd+odd = hearts, odd+even = diamonds, even+odd = spades, even+even = clubs.
+  - Third die: points ×2 (2–12).
+- A die has color, suit, and points; it counts for the color split and average. It is not a joker.
+- The AI can also use dice within its three uses.
+
+6.3 Coin Flip
+
+- Up to 3 times per player per match.
+- A coin can replace one card; the button shows the remaining uses (e.g. Coin ×3).
+- A coin is a colorless joker worth 0 points; it is excluded from the color split and average, but counts toward joker reversals.
+- At most one coin per round; the three uses can be spread across rounds.
+- The AI can also use coins within its three uses.
+
+7. DLC Reference
+
+Only one DLC can be active per match. Switching DLC restarts the current match under the new rules. Flip a rule card in the lobby to read it.
+
+DLC 0: Standard Council
+
+- No special rules.
+- Uses the base scoring and joker reversal.
+- Recommended for learning the game.
+
+DLC 1: Rank Removal · Everyone's a Joker
+
+- All J, Q, K become 0-point jokers while keeping their suit color: red = big joker, black = small joker.
+- They still occupy hand slots and still count for the color split and average (at 0 points).
+- They count toward joker reversals.
+- The normal limit of 2 committed cards per round still applies.
+- Tip: J/Q/K change both the averages and the joker parity, making them useful for forcing a reversal.
+
+DLC 2: Pass · Pretend to Think
+
+- Each player may pass up to 3 times per match.
+- A pass round commits no card; if both pass, the round settles but no cards are refilled.
+- A pass round cannot use dice or coins.
+- The AI can pass too.
+- Tip: pass when your hand is weak, but remember that a double pass skips the refill and speeds up deck exhaustion.
+
+DLC 3: Mutual Snatch · Don't Even Think About It
+
+- After settling, if the cards committed by both sides share a suit or an effective point value (dice and coins excluded), Mutual Snatch triggers.
+- Both sides discard their remaining hands and refill to 4 cards.
+- If either side cannot refill to 4: the match ends immediately and the two scores are swapped.
+- If both can refill to 4: play continues normally.
+- "Same value" uses the effective values for the round (so Parity and Cumulative Change can change what counts).
+- Tip: near deck exhaustion, triggering Mutual Snatch can end the match and swap the score.
+
+DLC 4: Dice Call · The Dice Decide
+
+- Each player may use dice up to 3 times per match.
+- A die replaces one card; on a die turn you may commit only 1 more card.
+- Three rolls decide color, suit, and points:
+  - First die: odd = red, even = black.
+  - First two parity: odd+odd = hearts, odd+even = diamonds, even+odd = spades, even+even = clubs.
+  - Third die: points ×2 (2–12).
+- The die counts for the color split and average, but is not a joker.
+- Tip: a high die can lift a color's average; a low die can act as a "padding" card.
+
+DLC 5: Coin Flip · A Little Coin Magic
+
+- Each player may use coins up to 3 times per match.
+- A coin replaces one card and is a colorless joker worth 0 points.
+- It is excluded from the color split and average, but counts toward joker reversals.
+- At most one coin per round; the three uses can be spread across rounds.
+- Tip: coins let you fine-tune joker parity, especially near a tie.
+
+DLC 6: Parity · Only Zero and One
+
+- Every card's effective value = face value mod 2, leaving only 0 or 1.
+- Jokers remain 0.
+- Examples: A=1→1, 2→0, 3→1, 10→0, J=11→1, Q=12→0, K=13→1.
+- Averages are still rounded up, but can only be 0 or 1.
+- Tip: high cards are not automatically good; the goal is to collect more 1s.
+
+DLC 7: Cumulative Change · This Time, That Time
+
+- The match lasts up to 16 rounds; it ends after round 16, or earlier if the deck runs out.
+- Starting at round 2, at the beginning of every even round, all cards swap red/black; round 3 keeps the new colors, round 4 swaps back.
+- A card's effective value for the round = (face value + current round) mod 13.
+  - A=1, J=11, Q=12, K=13; jokers remain 0.
+  - Example, round 1: A→2, J→12, K→14 mod 13 = 1.
+- Note: under the base rules, the players' sides swap every round; Cumulative Change additionally swaps the cards' colors on even rounds. These are different things.
+- The UI shows "Round X / 16" and "Color · Reversed / Normal"; the round calculation panel lists the formula, color state, and each card's effective value.
+
+8. AI Strength and AI Advisors
+
+- Casual: random card play, occasional pass/dice/coin; good for learning.
+- Standard: considers suits, averages, and joker risk; steadier play.
+- Deep: simulates unknown hands and plays by win probability; slower but tougher.
+- In solo mode, the selected AI advisor mainly provides the portrait and dialogue; the opponent strength setting determines DeepSeek's actual play.
+- The AI can use pass, dice, and coins within their three-use limits.
+
+9. Controls and Interface
+
+- Tap a card to select or deselect; up to 2 cards per round.
+- Submit Proposal settles the round; Next Round continues.
+- End Discussion requires two confirmations.
+- The top bar opens the advisor codex, DLC rules, game rules, music player, sound, fullscreen, touch interaction, and leave-game controls.
+- The music panel has a Collapse button and supports playlists and local tracks.
+- The pet can be dragged anywhere and remembers its position; tap it for a random action, hide it with the close button, and restore it from the pet button.
+- The language button at the lower-left switches between the Chinese and English pages; switching reloads the corresponding page.
+
+10. FAQ
+
+Q1: Does an even number of jokers reverse the result?  
+No. Only an odd number reverses, and it reverses once.
+
+Q2: If the round is a tie and the joker count is odd, does someone win?  
+No. A tie stays a tie; both sides gain +1.
+
+Q3: Does a coin count as a joker?  
+Yes. A coin is a colorless joker, counts toward joker reversals, but is excluded from the color split and average.
+
+Q4: Does a die count as a joker?  
+No. A die has color, suit, and points; it counts for the color split and average, but not for joker reversals.
+
+Q5: Do J/Q/K under Rank Removal count for the color split and average?  
+Yes, at 0 points. They are also jokers and count toward reversals.
+
+Q6: What happens if both players pass?  
+The round settles normally, both gain +1, and no cards are refilled.
+
+Q7: Can I use dice or a coin after passing?  
+No. A pass round cannot use dice or coins.
+
+Q8: Does Mutual Snatch always end the match?  
+No. If both sides can refill to 4, play continues; only if someone cannot refill does the match end and the scores swap.
+
+Q9: Are "card colors flip" and "player sides swap" the same?  
+No. Player sides swap every round; card colors flip only at the start of even rounds under Cumulative Change. The DLC uses both.
+
+Q10: Does Cumulative Change continue after round 16?  
+No. The match ends after round 16 is settled.
+
+Q11: Can the AI pass?  
+Yes. The AI can pass within its three uses based on hand strength; dice and coins also have three uses each.
+
+Q12: Why does switching language reset the match?  
+Chinese and English are separate pages; switching reloads the corresponding page and does not carry the in-match state across pages.
+
+Q13: Can I play offline?  
+Yes. After the first online load, the service worker caches core content. Offline caching registers on https:// or localhost.
+
+Q14: How do I install it on mobile?  
+iOS Safari: Share → Add to Home Screen. Android Chrome: ⋮ → Install app / Add to Home Screen.
+
+Q15: Why does the match sometimes continue after the deck is empty?  
+The match ends only when the deck is empty and neither side can refill to 4. If one side can still refill, play continues.
+
+11. Glossary
+
+| Chinese | English | Notes |
+| 对议牌 | Councils | Game title |
+| 蓝色大肥鱼 | deepseek-chan | Character name |
+| 对议点数 / 议点 | Conuncils Point | Score |
+| 扣牌 | play / commit a card | Commit a card this round |
+| 摊牌 | reveal | Show committed cards |
+| 分色 | color split | Split into red/black |
+| 均点 | average points | Average within a color |
+| 向上取整 | round up | Round the average up |
+| 王牌 | joker | Big/small joker or coin |
+| 翻转 | reversal | Odd jokers reverse the winner |
+| 空覆 | pass | Commit no card |
+| 引骰 | dice call | Use a die |
+| 转币 | coin flip | Use a coin |
+| 除尊 | rank removal | J/Q/K become 0-point jokers |
+| 同夺 | mutual snatch | Same suit/value triggers a reshuffle |
+| 求同 | parity | Values modulo 2 |
+| 积变 | cumulative change | Round bonus and even-round color flips |
+| 对席 | opponent | DeepSeek in solo |
+| AI 议席 | AI advisor | Selectable portrait and dialogue |
+| 图鉴 | codex | Character and pet gallery |
+
+12. Credits and Rights
+
+This is a free, non-commercial fan-made card game page. The names and character likenesses of DeepSeek, ChatGPT, Claude, Gemini, Qwen, Zhipu, and Grok belong to their respective owners; background music remains with its original creators. The 4.5 update refreshed the AI advisor portraits and provided complete bilingual pages while preserving the original gameplay, asset layout, and credits. If a rights holder requests a change or removal, please contact the project maintainer.
+==============================================================================
+分享这段 | Share Text
+  《对议牌 · 蓝色大肥鱼版本 4.5》  
+  扑克 + AI 议席 + 七种 DLC 规则的轻量桌游，手机/桌面都能玩。  
+  中文：https://selectist377.github.io/deepseek-chan-councils/  
+  English: https://selectist377.github.io/deepseek-chan-councils/index.en.html
+  Councils (deepseek-chan edition) 4.5  
+  A lightweight browser card game with AI advisors and seven DLC rule sets.  
+  English: https://selectist377.github.io/deepseek-chan-councils/index.en.html  
+  Chinese: https://selectist377.github.io/deepseek-chan-councils/
