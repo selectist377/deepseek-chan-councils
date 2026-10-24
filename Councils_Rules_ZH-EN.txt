@@ -171,7 +171,7 @@ DLC 2：空覆 · 假装思考（Pass · Pretend to Think）
 - 空覆回合不扣牌；双方同时空覆时照常结算但不补牌。
 - 空覆回合不能引骰或转币。
 - 人机也会空覆。
-- 提示：手牌很差时，空覆可以避免把弱牌打进结算；但双方都空覆时不会补牌，牌堆会更快耗尽。
+- 提示：手牌很差时，空覆可以避免把弱牌打进结算；但双方都空覆时不会补牌，牌堆会更漫耗尽。
 
 DLC 3：同夺 · 你也别想了（Mutual Snatch · Don't Even Think About It）
 
@@ -191,7 +191,7 @@ DLC 4：引骰 · 骰子说了算（Dice Call · The Dice Decide）
   - 前两掷奇偶：奇+奇红桃，奇+偶方片，偶+奇黑桃，偶+偶梅花。
   - 第三掷：点数 ×2（2–12）。
 - 骰子参与分色与均点，但不是王牌。
-- 提示：高点数骰子可以显著抬高某一颜色的均点；低点数骰子则适合用来「垫」均点。
+- 提示：高点数骰子可以显著抬高某一颜色的均点；低点数骰子则适合用来「垫」均点，一切都看运气。
 
 DLC 5：转币 · 用硬币变个魔术（Coin Flip · A Little Coin Magic）
 
@@ -452,7 +452,7 @@ DLC 2: Pass · Pretend to Think
 - A pass round commits no card; if both pass, the round settles but no cards are refilled.
 - A pass round cannot use dice or coins.
 - The AI can pass too.
-- Tip: pass when your hand is weak, but remember that a double pass skips the refill and speeds up deck exhaustion.
+- Tip: pass when your hand is weak, but remember that a double pass skips the refill and slows down deck exhaustion.
 
 DLC 3: Mutual Snatch · Don't Even Think About It
 
@@ -488,7 +488,7 @@ DLC 6: Parity · Only Zero and One
 - Jokers remain 0.
 - Examples: A=1→1, 2→0, 3→1, 10→0, J=11→1, Q=12→0, K=13→1.
 - Averages are still rounded up, but can only be 0 or 1.
-- Tip: high cards are not automatically good; the goal is to collect more 1s.
+- Tip: high cards are not automatically good; the goal is to draw more 1s.
 
 DLC 7: Cumulative Change · This Time, That Time
 
